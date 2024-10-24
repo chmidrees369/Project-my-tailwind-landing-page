@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS Homepage</title>
+    <link
+      rel="shortcut icon"
+      href="images\images.png"
+      type="images\images.png"
+    />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navigation Menu -->
+    <nav class="bg-gray-800 p-4 text-white">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <a href="#" class="text-2xl font-bold">MyWebsite</a>
+
+        <!-- Menu Links -->
+        <ul class="flex space-x-4 relative">
+          <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+          <li><a href="#about" class="hover:text-blue-400">About</a></li>
+          <li class="relative group">
+            <a href="#services" class="hover:text-blue-400">Services</a>
+            <!-- Dropdown for Services -->
+            <ul
+              class="hidden group-hover:block absolute bg-white text-black shadow-md p-4 space-y-2 mt-2 rounded-lg z-10"
+            >
+              <li>
+                <a href="#webdev" class="block hover:text-blue-400"
+                  >Web Development</a
+                >
+              </li>
+              <li>
+                <a href="#mobile" class="block hover:text-blue-400"
+                  >Mobile App Development</a
+                >
+              </li>
+              <li>
+                <a href="#uiux" class="block hover:text-blue-400"
+                  >UI/UX Design</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+        </ul>
+
+        <!-- Search Bar -->
+        <div class="relative">
+          <input
+            type="text"
+            class="bg-gray-700 text-white p-2 rounded focus:outline-none focus:ring focus:ring-blue-300"
+            placeholder="Search..."
+          />
+          <button
+            class="absolute right-0 top-0 p-2 bg-blue-600 text-white rounded hover:bg-blue-500"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-white p-8 text-center">
+      <h2 class="text-3xl font-semibold text-gray-700">
+        Welcome to Our Platform
+      </h2>
+      <p class="mt-4 text-gray-600">
+        Explore our collection of high-quality designs and modern code.
+      </p>
+      <img
+        class="mx-auto mt-6 w-3/4 h-auto rounded-lg shadow-lg"
+        src="images\pexels-photo-1714208.webp"
+        alt="A captivating hero image showcasing web and app development."
+      />
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-gray-200 p-8 text-center">
+      <h2 class="text-2xl font-semibold text-gray-700">About Us</h2>
+      <p class="mt-4 text-gray-600">
+        We are a dedicated team of developers and designers committed to
+        delivering top-notch digital solutions. Our goal is to provide
+        innovative and effective services that cater to your business needs.
+      </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-gray-200 p-8">
+      <h2 class="text-3xl font-semibold text-center text-gray-700">
+        Our Services
+      </h2>
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+        <div
+          id="webdev"
+          class="bg-white p-6 rounded-lg shadow-md transition-transform transform hover:scale-105"
+        >
+          <img
+            class="w-full h-40 object-cover rounded-lg"
+            src="images\web-dev-img.jpeg"
+            alt="Web Development Services"
+          />
+          <h3 class="text-xl font-semibold text-blue-600 mt-4">
+            Web Development
+          </h3>
+          <p class="mt-2 text-gray-600">
+            We specialize in building responsive and dynamic websites that cater
+            to your business needs. Our team utilizes modern frameworks like
+            React, Angular, and Vue.js to create engaging user experiences and
+            robust back-end systems.
+          </p>
+        </div>
+        <div
+          id="mobile"
+          class="bg-white p-6 rounded-lg shadow-md transition-transform transform hover:scale-105"
+        >
+          <img
+            class="w-full h-40 object-cover rounded-lg"
+            src="images\imac-apple-mockup-app-38544.jpeg"
+            alt="Mobile App Development Services"
+          />
+          <h3 class="text-xl font-semibold text-blue-600 mt-4">
+            Mobile App Development
+          </h3>
+          <p class="mt-2 text-gray-600">
+            Our mobile app development services offer end-to-end solutions for
+            both Android and iOS platforms. We focus on performance, usability,
+            and innovative features to bring your app ideas to life.
+          </p>
+        </div>
+        <div
+          id="uiux"
+          class="bg-white p-6 rounded-lg shadow-md transition-transform transform hover:scale-105"
+        >
+          <img
+            class="w-full h-40 object-cover rounded-lg"
+            src="images\2e948896757753.5eb58c727d672-1024x708.png"
+            alt="UI/UX Design Services"
+          />
+          <h3 class="text-xl font-semibold text-blue-600 mt-4">UI/UX Design</h3>
+          <p class="mt-2 text-gray-600">
+            Our design team creates intuitive user interfaces and engaging
+            experiences that enhance user satisfaction. We prioritize usability
+            and aesthetic appeal to ensure your digital products stand out.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-white p-8 text-center">
+      <h2 class="text-2xl font-semibold text-gray-700">Get In Touch</h2>
+      <p class="mt-4 text-gray-600">
+        Feel free to reach out to us for any inquiries or support. We are here
+        to assist you! Whether you have a question about our services or need
+        technical support, don't hesitate to contact us. Our team is dedicated
+        to providing prompt and helpful responses.
+      </p>
+      <a
+        href="#"
+        class="mt-6 inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors"
+        >Contact Us</a
+      >
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 p-4 text-white text-center">
+      <p>&copy; 2024 MyWebsite. All rights reserved.</p>
+      <p>Follow us on:</p>
+      <div class="flex justify-center space-x-4 mt-2">
+        <a href="#" class="hover:text-blue-400">Facebook</a>
+        <a href="#" class="hover:text-blue-400">Twitter</a>
+        <a href="#" class="hover:text-blue-400">LinkedIn</a>
+      </div>
+    </footer>
+  </body>
+</html>
