@@ -55,6 +55,4 @@ project-folder/
 ## License
 This project is **open-source** and free to use.
 
-## Contact
-For support or inquiries, reach out at **your-email@example.com**.
 
